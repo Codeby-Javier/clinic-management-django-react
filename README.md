@@ -110,65 +110,67 @@ See **[DAFTAR_AKUN_LOGIN.md](DAFTAR_AKUN_LOGIN.md)** for complete list.
 
 ---
 
-## 🎯 Fitur Lengkap
+## 🎯 Complete Features
 
 ### 👨‍💼 Admin
-- ✅ Manajemen user (CRUD semua role)
-- ✅ Kelola layanan tindakan medis
-- ✅ Dashboard overview dengan statistik
-- ✅ Laporan revenue dan transaksi
-- ✅ Reset password user
-- ✅ Edit biaya konsultasi dokter
-- ✅ Riwayat transaksi per user
-- ✅ Manajemen obat dan stok
+- ✅ User management (CRUD all roles)
+- ✅ Manage medical services
+- ✅ Dashboard overview with statistics
+- ✅ Revenue and transaction reports
+- ✅ Reset user passwords
+- ✅ Edit doctor consultation fees
+- ✅ Transaction history per user
+- ✅ Medicine and stock management
 
-### 👨‍⚕️ Dokter
-- ✅ Input rekam medis pasien
-- ✅ Buat resep obat
-- ✅ Atur jadwal praktik per hari
-- ✅ Lihat daftar pasien
-- ✅ Lihat janji temu hari ini
-- ✅ Mulai konsultasi
-- ✅ Input tindakan medis
-- ✅ Dashboard statistik pasien
+### 👨‍⚕️ Doctor
+- ✅ Input patient medical records
+- ✅ Create medicine prescriptions
+- ✅ Set daily practice schedule
+- ✅ View patient list
+- ✅ View today's appointments
+- ✅ Start consultations
+- ✅ Input medical procedures
+- ✅ Patient statistics dashboard
 
-### 🧑‍🦱 Pasien
-- ✅ Registrasi akun baru
-- ✅ Booking janji temu dengan dokter
-- ✅ Lihat jadwal dokter tersedia
-- ✅ Lihat rekam medis sendiri
-- ✅ Lihat resep obat
-- ✅ Riwayat pembayaran
-- ✅ Cancel janji temu
-- ✅ Dashboard riwayat kesehatan
+### 🧑‍🦱 Patient
+- ✅ Register new account
+- ✅ Book appointments with doctors
+- ✅ View available doctor schedules
+- ✅ View own medical records
+- ✅ View medicine prescriptions
+- ✅ Payment history
+- ✅ Cancel appointments
+- ✅ Health history dashboard
 
-### 🏥 Resepsionis
-- ✅ Pendaftaran pasien baru
-- ✅ Kelola antrian pasien
-- ✅ Konfirmasi janji temu
-- ✅ Lihat jadwal dokter
-- ✅ Filter janji temu per tanggal
-- ✅ Sistem nomor antrian unik per dokter
-- ✅ Statistik janji temu (pending, confirmed, completed)
+### 🏥 Receptionist
+- ✅ Register new patients
+- ✅ Manage patient queue
+- ✅ Confirm appointments
+- ✅ View doctor schedules
+- ✅ Filter appointments by date
+- ✅ Unique queue number system per doctor
+- ✅ Appointment statistics (pending, confirmed, completed)
 
-### 💊 Apoteker
-- ✅ Kelola stok obat (CRUD)
-- ✅ Proses resep dari dokter
-- ✅ Alert stok obat menipis
-- ✅ Input obat keluar
-- ✅ Lihat resep pending
-- ✅ Update status resep (processed, delivered)
-- ✅ Dashboard statistik resep
+### 💊 Pharmacist
+- ✅ Manage medicine stock (CRUD)
+- ✅ Process prescriptions from doctors
+- ✅ Low stock medicine alerts
+- ✅ Medicine dispensing
+- ✅ View pending prescriptions
+- ✅ Update prescription status (processed, delivered)
+- ✅ Prescription statistics dashboard
 
-### 💰 Kasir
-- ✅ Proses pembayaran
-- ✅ Generate invoice otomatis
-- ✅ Multiple metode pembayaran (Tunai, Transfer, QRIS, Asuransi)
-- ✅ Hitung kembalian otomatis
-- ✅ Print invoice
-- ✅ Laporan keuangan
-- ✅ Filter pembayaran (pending, lunas)
-- ✅ Dashboard revenue
+### 💰 Cashier
+- ✅ Process payments
+- ✅ Generate automatic invoices
+- ✅ Multiple payment methods (Cash, Transfer, QRIS, Insurance)
+- ✅ Automatic change calculation
+- ✅ Print invoices
+- ✅ Financial reports
+- ✅ Filter payments (pending, paid)
+- ✅ Revenue dashboard
+
+---
 
 ## 🛠️ Tech Stack
 
@@ -219,13 +221,15 @@ See **[DAFTAR_AKUN_LOGIN.md](DAFTAR_AKUN_LOGIN.md)** for complete list.
 └──────────────────────────────────────────────────────────┘
 ```
 
-## 📦 Instalasi
+---
+
+## 📦 Installation
 
 ### Prerequisites
-- **Python** 3.10 atau lebih tinggi
-- **Node.js** 18 atau lebih tinggi
-- **npm** atau **yarn**
-- **Git** (untuk clone repository)
+- **Python** 3.10 or higher
+- **Node.js** 18 or higher
+- **npm** or **yarn**
+- **Git** (for cloning repository)
 
 ### 1️⃣ Clone Repository
 
@@ -234,13 +238,13 @@ git clone https://github.com/yourusername/klinik-kesehatan.git
 cd klinik-kesehatan
 ```
 
-### 2️⃣ Setup Backend (Django)
+### 2️⃣ Backend Setup (Django)
 
 ```bash
-# Buat virtual environment (opsional tapi direkomendasikan)
+# Create virtual environment (optional but recommended)
 python -m venv venv
 
-# Aktifkan virtual environment
+# Activate virtual environment
 # Windows:
 venv\Scripts\activate
 # Linux/Mac:
@@ -249,48 +253,48 @@ source venv/bin/activate
 # Install dependencies
 pip install django djangorestframework djangorestframework-simplejwt django-cors-headers django-filter Pillow
 
-# Jalankan migrasi database
+# Run database migrations
 python manage.py migrate
 
-# Buat superuser (opsional)
+# Create superuser (optional)
 python manage.py createsuperuser
 
-# Jalankan server
+# Run server
 python manage.py runserver
 ```
 
-Backend akan berjalan di: **http://localhost:8000**
+Backend will run at: **http://localhost:8000**
 
-### 3️⃣ Setup Frontend (React)
+### 3️⃣ Frontend Setup (React)
 
-Buka terminal baru:
+Open new terminal:
 
 ```bash
-# Masuk ke folder frontend
+# Navigate to frontend folder
 cd frontend
 
 # Install dependencies
 npm install
 
-# Jalankan development server
+# Run development server
 npm run dev
 ```
 
-Frontend akan berjalan di: **http://localhost:5173**
+Frontend will run at: **http://localhost:5173**
 
-### 4️⃣ Akses Aplikasi
+### 4️⃣ Access Application
 
-Buka browser dan akses: **http://localhost:5173**
+Open browser and go to: **http://localhost:5173**
 
-Login dengan salah satu akun dari [DAFTAR_AKUN_LOGIN.md](DAFTAR_AKUN_LOGIN.md)
+Login with any account from [DAFTAR_AKUN_LOGIN.md](DAFTAR_AKUN_LOGIN.md)
 
 ---
 
-## 🔧 Konfigurasi
+## 🔧 Configuration
 
 ### Environment Variables
 
-Buat file `.env` di root directory (opsional):
+Create `.env` file in root directory (optional):
 
 ```env
 # Django
@@ -298,7 +302,7 @@ SECRET_KEY=your-secret-key-here
 DEBUG=True
 ALLOWED_HOSTS=localhost,127.0.0.1
 
-# Database (jika menggunakan PostgreSQL)
+# Database (if using PostgreSQL)
 DB_NAME=klinik_db
 DB_USER=postgres
 DB_PASSWORD=your-password
@@ -317,60 +321,46 @@ Edit `frontend/.env`:
 VITE_API_URL=http://localhost:8000/api
 ```
 
-## 🔐 Demo Credentials
-
-Lihat file **DAFTAR_AKUN_LOGIN.md** untuk daftar lengkap.
-
-| Role | Username | Password |
-|------|----------|----------|
-| Admin | admin | admin123 |
-| Dokter | dr.ahmad | password123 |
-| Dokter | dr.siti | soto1234 |
-| Pasien | jono | pasien123 |
-| Resepsionis | resepsionis1 | resepsionis123 |
-| Apoteker | apoteker1 | apoteker123 |
-| Kasir | kasir1 | kasir123 |
-
 ---
 
-## 📝 Perintah-Perintah Penting
+## 📝 Important Commands
 
 ### Backend (Django)
 
-#### Setup & Instalasi
+#### Setup & Installation
 ```bash
 # Install dependencies
 pip install django djangorestframework djangorestframework-simplejwt django-cors-headers django-filter Pillow
 
-# Buat virtual environment
+# Create virtual environment
 python -m venv venv
 
-# Aktifkan virtual environment
+# Activate virtual environment
 venv\Scripts\activate          # Windows
 source venv/bin/activate       # Linux/Mac
 ```
 
 #### Database
 ```bash
-# Buat migrasi baru
+# Create new migrations
 python manage.py makemigrations
 
-# Jalankan migrasi
+# Run migrations
 python manage.py migrate
 
 # Reset database
 python manage.py flush
 
-# Buat superuser
+# Create superuser
 python manage.py createsuperuser
 ```
 
 #### Server
 ```bash
-# Jalankan development server
+# Run development server
 python manage.py runserver
 
-# Jalankan di port tertentu
+# Run on specific port
 python manage.py runserver 8080
 ```
 
@@ -385,7 +375,7 @@ python manage.py dbshell
 # Collect static files
 python manage.py collectstatic
 
-# Cek masalah
+# Check issues
 python manage.py check
 
 # Custom command
@@ -399,7 +389,7 @@ python manage.py clean_transaction_data
 # Install dependencies
 npm install
 
-# Jalankan dev server
+# Run dev server
 npm run dev
 
 # Build production
@@ -414,7 +404,7 @@ npm run preview
 # Update dependencies
 npm update
 
-# Cek outdated packages
+# Check outdated packages
 npm outdated
 
 # Install package
@@ -475,7 +465,7 @@ npm --version
 
 ---
 
-## 🌐 Dokumentasi API
+## 🌐 API Documentation
 
 ### Base URL
 ```
@@ -485,8 +475,8 @@ http://localhost:8000/api
 ### Authentication
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | `/api/auth/register/` | Register pasien baru |
-| POST | `/api/auth/login/` | Login user |
+| POST | `/api/auth/register/` | Register new patient |
+| POST | `/api/auth/login/` | User login |
 | POST | `/api/auth/refresh/` | Refresh token |
 | GET | `/api/auth/me/` | Get current user profile |
 
@@ -495,51 +485,53 @@ http://localhost:8000/api
 |--------|----------|-------------|
 | GET/POST | `/api/users/` | List/Create users |
 | GET/PUT/DELETE | `/api/users/{id}/` | User detail |
-| GET/POST | `/api/layanan-tindakan/` | List/Create layanan |
+| GET/POST | `/api/layanan-tindakan/` | List/Create services |
 | GET | `/api/laporan/overview/` | Dashboard overview |
 | GET | `/api/laporan/revenue-chart/` | Revenue chart data |
 
-### Dokter
+### Doctor
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/dokter/jadwal-saya/` | Get jadwal dokter |
-| PUT | `/api/dokter/jadwal-saya/update/` | Update jadwal |
-| GET | `/api/dokter/pasien-saya/` | List pasien dokter |
-| GET | `/api/dokter/janji-temu/` | List janji temu |
-| POST | `/api/rekam-medis/` | Create rekam medis |
+| GET | `/api/dokter/jadwal-saya/` | Get doctor schedule |
+| PUT | `/api/dokter/jadwal-saya/update/` | Update schedule |
+| GET | `/api/dokter/pasien-saya/` | List doctor's patients |
+| GET | `/api/dokter/janji-temu/` | List appointments |
+| POST | `/api/rekam-medis/` | Create medical record |
 
-### Pasien
+### Patient
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/dokter/jadwal/` | List jadwal dokter |
-| POST | `/api/janji-temu/booking/` | Booking janji temu |
-| GET | `/api/janji-temu/riwayat/` | Riwayat janji temu |
-| GET | `/api/rekam-medis/saya/` | Rekam medis sendiri |
-| GET | `/api/pembayaran/riwayat/` | Riwayat pembayaran |
+| GET | `/api/dokter/jadwal/` | List doctor schedules |
+| POST | `/api/janji-temu/booking/` | Book appointment |
+| GET | `/api/janji-temu/riwayat/` | Appointment history |
+| GET | `/api/rekam-medis/saya/` | Own medical records |
+| GET | `/api/pembayaran/riwayat/` | Payment history |
 
-### Resepsionis
+### Receptionist
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET/POST | `/api/pasien/` | List/Register pasien |
-| GET | `/api/janji-temu/` | List janji temu |
-| POST | `/api/janji-temu/{id}/konfirmasi/` | Konfirmasi janji |
-| GET | `/api/antrian/` | List antrian |
+| GET/POST | `/api/pasien/` | List/Register patients |
+| GET | `/api/janji-temu/` | List appointments |
+| POST | `/api/janji-temu/{id}/konfirmasi/` | Confirm appointment |
+| GET | `/api/antrian/` | List queue |
 
-### Apoteker
+### Pharmacist
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET/POST | `/api/obat/` | List/Create obat |
-| GET | `/api/obat/stok_menipis/` | Obat stok menipis |
-| GET | `/api/resep/` | List resep |
-| POST | `/api/resep/{id}/proses/` | Proses resep |
+| GET/POST | `/api/obat/` | List/Create medicines |
+| GET | `/api/obat/stok_menipis/` | Low stock medicines |
+| GET | `/api/resep/` | List prescriptions |
+| POST | `/api/resep/{id}/proses/` | Process prescription |
 
-### Kasir
+### Cashier
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/pembayaran/` | List pembayaran |
-| GET | `/api/pembayaran/pending/` | Pembayaran pending |
-| POST | `/api/pembayaran/{id}/bayar/` | Proses pembayaran |
-| GET | `/api/kasir/stats/` | Statistik kasir |
+| GET | `/api/pembayaran/` | List payments |
+| GET | `/api/pembayaran/pending/` | Pending payments |
+| POST | `/api/pembayaran/{id}/bayar/` | Process payment |
+| GET | `/api/kasir/stats/` | Cashier statistics |
+
+---
 
 ## 🎨 Design System
 
@@ -554,7 +546,9 @@ http://localhost:8000/api
 - **Headings**: Semibold/Bold
 - **Body**: Regular/Medium
 
-## 📁 Struktur Projek
+---
+
+## 📁 Project Structure
 
 ```
 klinik-kesehatan/
@@ -564,7 +558,7 @@ klinik-kesehatan/
 │   │       └── clean_transaction_data.py
 │   ├── 📂 migrations/                # Database migrations
 │   ├── admin.py                      # Django admin configuration
-│   ├── models.py                     # Database models (User, Dokter, Pasien, dll)
+│   ├── models.py                     # Database models (User, Doctor, Patient, etc)
 │   ├── serializers.py                # DRF serializers
 │   ├── views.py                      # API views & business logic
 │   ├── urls.py                       # URL routing
@@ -582,7 +576,7 @@ klinik-kesehatan/
 │   ├── 📂 public/                    # Static assets
 │   ├── 📂 src/
 │   │   ├── 📂 components/            # Reusable components
-│   │   │   ├── 📂 ui/                # UI components (Button, Modal, Table, dll)
+│   │   │   ├── 📂 ui/                # UI components (Button, Modal, Table, etc)
 │   │   │   ├── 📂 layout/            # Layout components (Sidebar, Header)
 │   │   │   └── ErrorBoundary.tsx    # Error handling
 │   │   │
@@ -591,23 +585,23 @@ klinik-kesehatan/
 │   │   │   │   ├── UserManagement.tsx
 │   │   │   │   ├── ObatManagement.tsx
 │   │   │   │   └── Dashboard.tsx
-│   │   │   ├── 📂 dokter/            # Dokter pages
+│   │   │   ├── 📂 dokter/            # Doctor pages
 │   │   │   │   ├── DokterJanjiTemu.tsx
 │   │   │   │   ├── RekamMedis.tsx
 │   │   │   │   └── JadwalPraktik.tsx
-│   │   │   ├── 📂 pasien/            # Pasien pages
+│   │   │   ├── 📂 pasien/            # Patient pages
 │   │   │   │   ├── PasienDashboard.tsx
 │   │   │   │   ├── BookingDokter.tsx
 │   │   │   │   ├── RekamMedisPasien.tsx
 │   │   │   │   └── PembayaranPasien.tsx
-│   │   │   ├── 📂 resepsionis/       # Resepsionis pages
+│   │   │   ├── 📂 resepsionis/       # Receptionist pages
 │   │   │   │   ├── ManajemenJanjiTemu.tsx
 │   │   │   │   ├── PendaftaranPasien.tsx
 │   │   │   │   └── AntrianPasien.tsx
-│   │   │   ├── 📂 apoteker/          # Apoteker pages
+│   │   │   ├── 📂 apoteker/          # Pharmacist pages
 │   │   │   │   ├── ObatApoteker.tsx
 │   │   │   │   └── ResepApoteker.tsx
-│   │   │   ├── 📂 kasir/             # Kasir pages
+│   │   │   ├── 📂 kasir/             # Cashier pages
 │   │   │   │   └── PembayaranKasir.tsx
 │   │   │   ├── 📂 auth/              # Authentication pages
 │   │   │   │   ├── LoginPage.tsx
@@ -660,7 +654,7 @@ klinik-kesehatan/
 │ username        │
 │ email           │
 │ password        │
-│ role            │ (admin/dokter/pasien/resepsionis/apoteker/kasir)
+│ role            │ (admin/doctor/patient/receptionist/pharmacist/cashier)
 │ phone           │
 │ address         │
 │ is_active       │
@@ -670,41 +664,41 @@ klinik-kesehatan/
          ├──────────────┬──────────────┬──────────────┬──────────────┬──────────────┐
          │              │              │              │              │              │
     ┌────▼────┐   ┌────▼────┐   ┌────▼────┐   ┌────▼────┐   ┌────▼────┐   ┌────▼────┐
-    │ Dokter  │   │ Pasien  │   │Resepsio │   │Apoteker │   │  Kasir  │   │  Admin  │
-    │         │   │         │   │   nis   │   │         │   │         │   │         │
+    │ Doctor  │   │ Patient │   │Receptio │   │Pharmaci │   │ Cashier │   │  Admin  │
+    │         │   │         │   │   nist  │   │   st    │   │         │   │         │
     └─────────┘   └─────────┘   └─────────┘   └─────────┘   └─────────┘   └─────────┘
 
 ┌──────────────────┐      ┌──────────────────┐      ┌──────────────────┐
-│   JanjiTemu      │──────│   RekamMedis     │──────│     Resep        │
+│   Appointment    │──────│   MedicalRecord  │──────│   Prescription   │
 ├──────────────────┤      ├──────────────────┤      ├──────────────────┤
-│ pasien (FK)      │      │ pasien (FK)      │      │ rekam_medis (FK) │
-│ dokter (FK)      │      │ dokter (FK)      │      │ status           │
-│ tanggal          │      │ janji_temu (FK)  │      │ detail_resep     │
-│ waktu            │      │ diagnosa         │      └──────────────────┘
-│ status           │      │ tindakan (M2M)   │               │
-│ nomor_antrian    │      │ resep            │               │
+│ patient (FK)     │      │ patient (FK)     │      │ medical_record   │
+│ doctor (FK)      │      │ doctor (FK)      │      │ status           │
+│ date             │      │ appointment (FK) │      │ prescription_det │
+│ time             │      │ diagnosis        │      └──────────────────┘
+│ status           │      │ procedures (M2M) │               │
+│ queue_number     │      │ prescription     │               │
 └──────────────────┘      └──────────────────┘               │
          │                         │                          │
          │                         │                          │
          └─────────────────────────┴──────────────────────────┘
                                    │
                           ┌────────▼────────┐
-                          │   Pembayaran    │
+                          │    Payment      │
                           ├─────────────────┤
-                          │ janji_temu (FK) │
-                          │ total_biaya     │
-                          │ metode          │
+                          │ appointment (FK)│
+                          │ total_amount    │
+                          │ method          │
                           │ status          │
                           │ invoice_number  │
                           └─────────────────┘
 
 ┌──────────────────┐      ┌──────────────────┐
-│      Obat        │──────│   DetailResep    │
+│    Medicine      │──────│PrescriptionDetail│
 ├──────────────────┤      ├──────────────────┤
-│ nama             │      │ resep (FK)       │
-│ kategori         │      │ obat (FK)        │
-│ stok             │      │ jumlah           │
-│ harga_jual       │      │ aturan_pakai     │
+│ name             │      │ prescription (FK)│
+│ category         │      │ medicine (FK)    │
+│ stock            │      │ quantity         │
+│ price            │      │ usage_rules      │
 │ expired_date     │      └──────────────────┘
 └──────────────────┘
 ```
@@ -719,7 +713,7 @@ klinik-kesehatan/
 ```bash
 cd frontend
 npm run build
-# Output akan ada di folder dist/
+# Output will be in dist/ folder
 ```
 
 **Backend:**
@@ -727,7 +721,7 @@ npm run build
 # Collect static files
 python manage.py collectstatic
 
-# Gunakan production server seperti Gunicorn
+# Use production server like Gunicorn
 pip install gunicorn
 gunicorn klinik.wsgi:application
 ```
@@ -740,21 +734,21 @@ gunicorn klinik.wsgi:application
 
 ---
 
-## 🤝 Kontribusi
+## 🤝 Contributing
 
-Kontribusi selalu welcome! Jika Anda ingin berkontribusi:
+Contributions are always welcome! If you want to contribute:
 
-1. Fork repository ini
-2. Buat branch baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
+1. Fork this repository
+2. Create new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Create Pull Request
 
 ---
 
 ## 📝 License
 
-Projek ini menggunakan lisensi MIT. Lihat file `LICENSE` untuk detail lebih lanjut.
+This project uses MIT license. See `LICENSE` file for more details.
 
 ---
 
@@ -772,13 +766,13 @@ Projek ini menggunakan lisensi MIT. Lihat file `LICENSE` untuk detail lebih lanj
 - Django & Django REST Framework team
 - React & Vite team
 - TailwindCSS team
-- Semua kontributor open source yang membuat projek ini mungkin
+- All open source contributors who made this project possible
 
 ---
 
 ## 📞 Support
 
-Jika Anda memiliki pertanyaan atau butuh bantuan:
+If you have questions or need help:
 
 - 📧 Email: your.email@example.com
 - 💬 Instagram: [@ibnu.jz](https://instagram.com/ibnu.jz)
@@ -788,7 +782,7 @@ Jika Anda memiliki pertanyaan atau butuh bantuan:
 
 <div align="center">
 
-**⭐ Jika projek ini membantu, jangan lupa beri star! ⭐**
+**⭐ If this project helps you, don't forget to give it a star! ⭐**
 
 Made by [@ibnu.jz](https://instagram.com/ibnu.jz)
 
