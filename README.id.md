@@ -7,7 +7,7 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![Django](https://img.shields.io/badge/django-5.0-green.svg)
+![Django](https://img.shields.io/badge/django-6.0-green.svg)
 ![React](https://img.shields.io/badge/react-19-61dafb.svg)
 ![TypeScript](https://img.shields.io/badge/typescript-5.0-blue.svg)
 
@@ -176,7 +176,7 @@ Lihat **[DAFTAR_AKUN_LOGIN.md](DAFTAR_AKUN_LOGIN.md)** untuk daftar lengkap.
 | Technology | Version | Purpose |
 |------------|---------|---------|
 | **Python** | 3.10+ | Programming Language |
-| **Django** | 5.0 | Web Framework |
+| **Django** | 6.0 | Web Framework |
 | **Django REST Framework** | 3.14+ | REST API |
 | **Simple JWT** | 5.3+ | Authentication |
 | **Django CORS Headers** | 4.3+ | CORS Handling |
@@ -790,6 +790,6 @@ Jika Anda memiliki pertanyaan atau butuh bantuan:
 
 **⭐ Jika projek ini membantu, jangan lupa beri star! ⭐**
 
-Made with ❤️ by [@ibnu.jz](https://instagram.com/ibnu.jz)
+Made by [@ibnu.jz](https://instagram.com/ibnu.jz)
 
 </div>
